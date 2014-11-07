@@ -1,0 +1,25 @@
+<p>Hello World</p>
+
+<%= 1+1 %>
+<br/>
+
+<% tag  = "world" %>
+<%= "Hello #{tag}" %>
+<br/>
+
+<% @array.each do |n| %>
+  <%= n %><br/>
+<% end %>
+
+<a href="demo/index">Back</a><br/>
+<%= link_to("Back again", {:action => "index"}) %>
+
+<br/>
+
+ID: <%= params[:id] %><br/>
+Id <%= @id %><br/>
+Page: <%= @page %><br/>
+Next Page: <%= @page.to_i + 1%>
+
+<hr />
+<%= params.inspect %>
